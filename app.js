@@ -89,8 +89,7 @@ pm2.connect(function(err) {
         var pointArray = [];
         for (var index = 0; index < resp.length; index++) {
           var element = resp[index];
-
-          console.log(element);
+          //console.log(element);
           var cpu_usage = element.monit.cpu;
           var physical = element.monit.memory;
           pointArray.push({
@@ -105,7 +104,7 @@ pm2.connect(function(err) {
            });
 
         }
-        console.log(pointArray);
+        //console.log(pointArray);
         infclient.writePoints(pointArray).catch(err => {
             console.error(`Error saving data to InfluxDB! ${err.stack}`);
         });
