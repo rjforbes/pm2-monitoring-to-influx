@@ -56,7 +56,7 @@ pm2.connect(function(err) {
                 {
                   measurement: 'cpu',
                   fields: {
-                    cpu_usage: Influx.FieldType.FLOAT
+                    cpu_process_usage: Influx.FieldType.FLOAT
                   },
                   tags: [
                     'host','service'
@@ -90,12 +90,12 @@ pm2.connect(function(err) {
         for (var index = 0; index < resp.length; index++) {
           var element = resp[index];
           //console.log(element);
-          var cpu_usage = element.monit.cpu;
+          var cpu_process_usage = element.monit.cpu;
           var physical = element.monit.memory;
           pointArray.push({
             measurement: 'cpu',
             tags: { host: os.hostname() , service: element.name},
-            fields: { cpu_usage },
+            fields: { cpu_process_usage },
           });
           pointArray.push({
               measurement: 'memory',
