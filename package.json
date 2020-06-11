@@ -1,6 +1,6 @@
 {
   "name": "pm2-monitoring-to-influx",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Send basic pm2 monitoring data to influx db.",
   "main": "app.js",
   "scripts": {

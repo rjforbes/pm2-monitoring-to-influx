@@ -1,9 +1,9 @@
 # pm2-monitoring-to-influx
 ####Send basic pm2 monitoring data to influx db.
 
-This pm2 module send cpu and memory values for every service running in PM2 to influxdb.  This can then be easily displayed in Grafana for basic monitoring with historial data.
+This pm2 module sends cpu and memory values for every service running in pm2 to influxdb.  This can then be easily displayed in Grafana for basic monitoring with historial data.
 
-To Install as a PM2 Module:
+To Install as a pm2 module:
 ```
 pm2 install pm2-monitoring-to-influx
 ```
