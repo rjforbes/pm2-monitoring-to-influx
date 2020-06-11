@@ -1,0 +1,39 @@
+{
+  "name": "pm2-monitoring-to-influx",
+  "version": "1.1.0",
+  "description": "Send basic pm2 monitoring data to influx db.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://rjforbes@github.com/rjforbes/pm2-monitoring-to-influx.git"
+  },
+  "keywords": [
+    "influx",
+    "pm2",
+    "grafana",
+    "monitoring"
+  ],
+  "author": "RJ Forbes <ronforbes@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rjforbes/pm2-monitoring-to-influx/issues"
+  },
+  "homepage": "https://github.com/rjforbes/pm2-monitoring-to-influx#readme",
+  "dependencies": {
+    "influx": "^5.5.1",
+    "pm2": "^4.4.0",
+    "pmx": "^1.6.7"
+  },
+  "config": {
+    "interval": 1000,
+    "host": null,
+    "port": null,
+    "username": null,
+    "password": null,
+    "database": null,
+    "enabled": false
+  }
+}
