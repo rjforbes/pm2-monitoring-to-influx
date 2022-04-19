@@ -106,7 +106,7 @@ pm2.connect(function(err) {
         }
         //console.log(pointArray);
         infclient.writePoints(pointArray).catch(err => {
-            console.error(`Error saving data to InfluxDB! ${err.stack}`);
+            //console.error(`Error saving data to InfluxDB! ${err.stack}`);
         });
     }
   }
